@@ -1,0 +1,13 @@
+Write a program to find area of cone ? (pi constant, others ==> dynamic input from user, Output ==> interger) Use format function
+
+pi = 3.142
+r = float(input("enter radius: ")) #10
+h = float(input("enter height: ")) #20
+
+Area_of_Cone = int(pi*r*h)
+
+print(f"The area of cone for pi = {pi} , radius = {r} and height = {h} is {Area_of_Cone}") 
+The area of cone for pi = 3.142 , radius = 10 and height = 20 is 628.4
+
+
+print("The area of cone for pi = {} , radius = {} and height = {} is {} ".format(pi,r,h,Area_of_Cone))
