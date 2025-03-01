@@ -1,0 +1,114 @@
+int to float / bool / str / complex 
+float to int / bool / str / complex
+bool to float / int / str / complex
+complex to float / bool / str / int
+
+#1 int to float / bool / str / complex
+a = 10
+#print its original datatype
+print(a)
+print(type(a))
+
+#print int to float datatype
+b = float(a)
+print(b)
+print(type(b))
+
+#print int to bool datatype
+c = bool(a)
+print(c) #True
+print(type(c))
+
+#print int to str datatype
+d = str(a)
+print(d)
+print(type(d))
+
+#print int to complex datatype
+e = complex(a)
+print(e) #10+0j
+print(type(e))
+
+#2 float to int / bool / str / complex
+#int to str conversion
+a = 10.001
+
+#print its original datatype
+print(a)
+print(type(a))
+
+#print float to int datatype
+b = int(a)
+print(b) #10
+print(type(b))
+
+#print float to bool datatype
+c = bool(a)
+print(c) #True
+print(type(c))
+
+#print float to str datatype
+d = str(a) #Value Error
+print(d)
+print(type(d))
+
+#print float to complex datatype
+e = complex(a)
+print(e) #10.001+oj
+print(type(e))
+
+#3 bool to float / int / str / complex
+
+a = True
+
+#print its original datatype
+print(a)
+print(type(a))
+
+#print bool to float datatype
+b = float(a)
+print(b) #1.0
+print(type(b))
+
+#print bool to int datatype
+c = int(a)
+print(c) #1
+print(type(c))
+
+#print bool to str datatype
+d = str(a) 
+print(d) #True
+print(type(d))
+
+#print bool to complex datatype
+e = complex(a)
+print(e) # 1+oj
+print(type(e))
+
+#4 complex to float / bool / str / int
+
+a = 3+0j
+
+#print its original datatype
+print(a)
+print(type(a))
+
+#print complex to float datatype
+b = float(a)
+print(b) #3.0
+print(type(b))
+
+#print complex to bool datatype
+c = bool(a)
+print(c) #True
+print(type(c))
+
+#print complex to str datatype
+d = str(a) #Value Error
+print(d)
+print(type(d))
+
+#print complex to int datatype
+e = bool(a)
+print(e) #"3+0j"
+print(type(e))
