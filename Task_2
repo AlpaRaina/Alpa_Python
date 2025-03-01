@@ -1,0 +1,12 @@
+Single line comment and multi line comment:
+# is a single line comment and """ is for multi line comments(triple quotes)
+
+difference between " , ' , """ , ''':
+Example:'but this way, it\'s possible to print out "quotes from other people"'
+
+Diff types of operators:
+Assignment operators and Comparison operators.
+
+Type error and name error :
+Type error is for Data type mismatches
+Name error is for Undefined assignment.
