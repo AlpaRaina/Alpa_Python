@@ -1,0 +1,19 @@
+1. what is keyword and study about any 10 keywords in python:
+
+2. Study in detail about arithmentic operators in python 
++	Addition	x + y	
+-	Subtraction	x - y	
+*	Multiplication	x * y	
+/	Division	x / y	
+%	Modulus	x % y	
+**	Exponentiation	x ** y	
+//	Floor division	x // y
+
+3. Study in detail about print:
+The print() function prints the specified message to the screen. The message can be a string, or any other object, the object will be converted into a string before written to the screen.
+
+4. Revise: data type, data structure, variable, keyword:
+
+5. Camelcase in variable naming:
+The first letter of the first word is lowercase, and the first letter of each subsequent word is uppercase.
+Example:alpaRainaPython
