@@ -1,0 +1,219 @@
+#List
+
+#Create an empty list (two ways)
+li1=[]
+li2=list()
+print(li1,li2)
+
+#Concatenate with [5,6,7,8]
+li3=[5,6,7,8]
+li4=li1+li2+li3
+print("concatenate:",li4)
+
+#add 8,9,1,5,6,7,8,1 elements to that list
+li4=[8,9,1,5,6,7,8,1]
+li3.extend(li4)
+print("add:",li3)
+
+#Find frequency of 8 (count)
+print("count of 8:",li3.count(8))
+
+#find the mean of the list
+
+#find sum (List) + min + Max
+print(min(li3),max(li3),sum(li3))
+
+#Find median of the list
+
+#remove duplicates from list and give output in the format of tuple
+li5=tuple(set(li3))
+print(li5)
+
+#Tuple
+
+#Create two tuples (1,4,5,6,7,8) (5,6,7,8,9)
+tup1=1,4,5,6,7,8
+tup2=(5,6,7,8,9)
+
+print(tup1,tup2)
+
+#Find the common elements between two tuples
+common=tuple(set(tup1).intersection(tup2))
+print(common)
+
+#Concatenate both tuples and remove duplicates from tuple
+concat_list=tuple(set(tup1+tup2))
+print(concat_list)
+
+#Find the index value of 9 (after concatenation)
+print("Index Value of 9:",concat_list.index(9))
+
+#multiply above elements 3 times
+print(concat_list * 3)
+
+#Create two empty sets
+set1=set()
+set2=set()
+print(set1,set2)
+
+#update set1 with 7,8,9,1,2,3,4,5,0
+set3= {7,8,9,1,2,3,4,5,0}
+set1.update(set3)
+print(set1)
+
+#update set2 with 4,5,6,0
+set4={4,5,6,0}
+set2.update(set4)
+print(set2)
+
+#check whether set2 is subset of set1 or no ?
+print(set2.issubset(set1))
+
+#check whether both have common elements are no ?
+print(set1.isdisjoint(set2))
+
+#remove 8 from set 1 and set 2 ==> find the inferences
+set1.remove(8)
+#set2.remove(8)
+print(set1,set2)
+
+#discard 0 from set1 and set2
+set1.discard(0)
+set2.discard(0)
+print(set1,set2)
+
+#find collection of both sets ===> set1 and set2
+set1.union(set2)
+print(set1)
+
+#Dictionary:
+#create a dictionary
+dict1={}
+print(dict1)
+
+#{1:["english","maths","science"], 2:[10,20,30], 3:["bio-botany","bio-zoology","Algebra"]}
+dict2={1:["english","maths","science"], 2:[10,20,30], 3:["bio-botany","bio-zoology","Algebra"]}
+print(dict2)
+
+#Extract "bobtn" from above dictionary
+print(dict2[3][0][0:10:2])
+
+#Extract "arbeg" from above dictionary
+print("arbeg:",dict2[3][2][:-6:-1])
+
+#print all keys in dictionary and convert it into tuple
+print(tuple(dict2.keys()))
+
+#Find the average of all numbers available under key "2"
+avg=dict2[2]
+average=sum(avg)/len(avg)
+print("average:",average)
+
+#Task1
+Li1 = [2,3,4,5,[45,56,67,78,[111,222,333,[5555,3333,[10000,50000,"python","computer"],1111,7777,8888],444,555,666,777],89,23,34]]
+
+print(Li1[3])
+print(Li1[4][1])
+print(Li1[4][4][1])
+print(Li1[4][4][3][2][1])
+print(Li1[4][4][3][2][2][0:3])
+print(Li1[4][4][3][0])
+print(Li1[4][4][3][4])
+print(Li1[4][4][6])
+print(Li1[4][5])
+print(Li1[4][4][3][2][2][4:])
+print(Li1[4][4][2])
+print(Li1[4][4][3][1])
+
+
+#Task2
+a = [1,2,3,4,[100,101,102,"Computer_science"],200,203]
+
+b=a[4][3]
+print(b)
+c=(b.split("_"))
+print(c)
+#science
+print(c[1])
+
+#Computer
+print(c[0])
+
+#Task3
+a = [1,2,3,4,[101,102,103,[201,202,[999]], 666, 777]]
+
+#666
+print(a[4][4])
+#201
+print(a[4][3][0])
+#102
+print(a[4][1])
+#999
+print(a[4][3][2])
+#777
+print(a[4][5])
+
+#Task4:
+Li1 = [2,3,"python","hello",4,5,0]
+
+#ll
+print(Li1[3][2:4])
+#thon
+print(Li1[2][2:])
+
+
+#Task5
+Li1 = [1,2,3,4,5,[11,22,33,44,55,[111,222,333,444],6666,7777],7777]
+
+#Output Prediction
+print(Li1[5][0]) #11
+print(Li1[5][6]) #6666
+print(Li1[5][-2]) #6666
+print(Li1[5][7]) #7777
+print(Li1[6]) #7777
+print(Li1[5][5][1]) #222
+print(Li1[-2][-1]) #7777
+print(Li1[-2][2:4]) #33,44
+
+#Task6:
+
+a = {1: [1,2,3,"python"], 2:{10:"hello",20:"welcome",40: "science"}, 99: {3,4,5,6}, 40:{1:"zoology", 2:"Botany"}}
+
+#py
+print(a[1][3:5])
+#ello
+print(a[2][10][1:])
+#en
+print(a[2][40][3:5])
+#zoo
+print(a[40][1][:3])
+#Bot
+print(a[40][2][:3])
+
+#Task7:
+#Convert below two lists in to a dictionary
+
+Li1=[1,2,3,4,5]
+Li2=["python","cpp","c","java","php"]
+
+print(dict(zip(Li1,Li2)))
+
+#Task8:
+#Convert below set in to a list
+
+a={5,4,3,6,2,7,1}
+
+print(list(a))
+
+#Task9:
+#Remove duplicates from below list
+
+a=[5,4,3,6,2,7,1,2,3,4,1,2,3,4,5,6,5]
+print(set(a))
+
+#Task10:
+#Convert below one to tuple
+
+a=[5,4,3,6,2,7,1,2,3,4,1,2,3,4,5,6,5]
+print(tuple(a))
+
